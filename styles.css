@@ -1,22 +1,40 @@
 body {
     background: radial-gradient(circle at 100%,#1f3656, #131639);
+    height: 99vh;
+    width: 99%;
+    max-height: 100%;
+    max-width: 100%;
     color: whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-.header-area {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.title-score {
+.header {
+    grid-column-start: 3;
+    grid-column-end: 4;
     display: flex;
     justify-content: space-between;
-    width: 30vw;
-    border: 2px solid whitesmoke;
-    border-radius: 25px;
-    padding: 0px 50px 0px 50px;
 }
 
-.score-text {
-    align-self: flex-end;
+.paper {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    justify-self: flex-end;
+}
+
+.scissors {
+    grid-row-start: 3;
+    grid-column-start: 4;
+    justify-self: flex-start;
+}
+
+.rock {
+    grid-row-start: 5;
+    grid-column-start: 3;
+    justify-self: center;
+}
+
+.logo {
+    height: 75px;
 }
