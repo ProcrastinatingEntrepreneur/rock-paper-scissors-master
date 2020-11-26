@@ -1,22 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
+
 body {
-    background: radial-gradient(circle at 100%,#1f3656, #131639);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1f3656+0,131639+100 */
+    background: #1f3656; /* Old browsers */
+    background: radial-gradient(ellipse at center,  hsl(215,47%,23%) 0%,hsl(235,50%,15%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 97vh;
     color: whitesmoke;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-area {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .title-score {
     display: flex;
     justify-content: space-between;
     width: 30vw;
-    border: 2px solid whitesmoke;
+    border: 1px solid #FFFFFF50;
     border-radius: 25px;
-    padding: 0px 50px 0px 50px;
+    padding: 20px 50px 20px 50px;
 }
 
 .score-text {
     align-self: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.score {
+    color: black;
+    width: 160px;
+    height: 150px;
+    background-color: white;
+    border-radius: 25px;
+    align-self: center;
+}
+
+.paper {
+    background-color: white;
+    border-radius: 100px;
+    padding: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.paper-button {
+    border-radius: 100px;
+    padding: 15px;
+    margin-left: 15%;
+    margin-top: -4%;
+    position: absolute;
+    background-image: linear-gradient(to bottom,hsl(230, 89%, 62%) 0%,hsl(230, 89%, 35%) 100%);
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.scissors {
+    background-color: white;
+    border-radius: 100%;
+    padding: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.scissors-button {
+    border-radius: 100px;
+    padding: 15px;
+    position: absolute;
+    margin-left: -15%;
+    margin-top: -4%;
+    background-image: linear-gradient(to bottom, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rock {
+    background-color: white;
+    border-radius: 100%;
+    padding: 30px;
+    height: 50px;
+    width: 50px;
+    align-self: flex-end;
+    position: absolute;
+    border: 15px solid red;
+}
+
+.game-area {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url('images/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 325px;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    position: relative;
 }
