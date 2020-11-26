@@ -1,0 +1,22 @@
+body {
+    background: radial-gradient(circle at 100%,#1f3656, #131639);
+    color: whitesmoke;
+}
+
+.header-area {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title-score {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    padding: 0px 50px 0px 50px;
+}
+
+.score-text {
+    align-self: flex-end;
+}
