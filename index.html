@@ -19,7 +19,7 @@
 
   Play Again --->
   <link rel="stylesheet" type="text/css" href="./src/css/styles.css">
-  <script type="text/javascript" src="./src/js/script.js" defer></script>
+  <script type="text/javascript" src="./src/js/script.js"></script>
 </head>
 <body>
   <div class="header-area flex">
@@ -33,14 +33,14 @@
       </div>
     </div>
   </div>
-  <div class="game-area flex">
+  <div class="game-area flex" onclick="gameChoice('paper');">
     <div class="paper-button flex">
       <img alt="paper" src="images/icon-paper.svg" class="paper circle">
     </div>
     <div class="scissors-button flex" onclick="gameChoice('scissors');">
       <img alt="scissors" src="images/icon-scissors.svg" class="scissors circle">
     </div>
-    <div class="rock-button flex">
+    <div class="rock-button flex" onclick="gameChoice('rock');">
       <img alt="rock" src="images/icon-rock.svg" class="rock circle">
     </div>
   </div>
