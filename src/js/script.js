@@ -24,5 +24,17 @@ function gameChoice(choice) {
             console.log('You win!');
             console.log(score);
         }
+    } else {
+        if (choice === 'paper') {
+            computerChoiceIndex = Math.floor(Math.random() * 3);
+            if (computerChoiceIndex === 2) {
+                console.log('Computer won!');
+                if (score > 0) {
+                    score--;
+                } else {
+                    
+                }
+            }
+        }
     }
 }
