@@ -18,7 +18,7 @@ function gameChoice(choice) {
                 console.log(score);
             } else {
                 if (score >= 0) {
-                    score++
+                    score++;
             }
             document.querySelector('.score-count').innerHTML = score;
             console.log('You win!');
@@ -39,7 +39,7 @@ function gameChoice(choice) {
                 console.log(score);
             } else {
                 if (score >= 0) {
-                    score++
+                    score++;
             }
             document.querySelector('.score-count').innerHTML = score;
             console.log('You win!');
@@ -59,7 +59,7 @@ function gameChoice(choice) {
             }
             console.log(score)
             if (score >= 0) {
-                    score++
+                    score++;
             }
             document.querySelector('score-count').innerHTML = score;
             console.log('You win');
