@@ -11,9 +11,13 @@ body {
     flex-direction: column;
 }
 
-.header-area {
+.flex {
     display: flex;
+}
+
+.header-area {
     justify-content: center;
+    margin-top: 5%
 }
 
 .title-score {
@@ -26,7 +30,6 @@ body {
 }
 
 .score-text {
-    align-self: flex-end;
     text-align: center;
     text-transform: uppercase;
 }
@@ -41,60 +44,55 @@ body {
 }
 
 .paper {
-    background-color: white;
-    border-radius: 100px;
     padding: 30px;
-    height: 50px;
-    width: 50px;
 }
 
 .paper-button {
     border-radius: 100px;
-    padding: 15px;
+    padding: 10px;
     margin-left: 15%;
     margin-top: -4%;
     position: absolute;
     background-image: linear-gradient(to bottom,hsl(230, 89%, 62%) 0%,hsl(230, 89%, 35%) 100%);
     align-content: center;
     justify-content: center;
-    display: flex;
+    cursor: pointer;
 }
 
 .scissors {
-    background-color: white;
-    border-radius: 100%;
     padding: 30px;
-    height: 50px;
-    width: 50px;
 }
 
 .scissors-button {
     border-radius: 100px;
-    padding: 15px;
+    padding: 10px;
     position: absolute;
     margin-left: -15%;
     margin-top: -4%;
     background-image: linear-gradient(to bottom, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
-    display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .rock {
-    background-color: white;
-    border-radius: 100%;
     padding: 30px;
-    height: 50px;
-    width: 50px;
-    align-self: flex-end;
+}
+
+.rock-button {
+    border-radius: 100px;
+    padding: 10px;
     position: absolute;
-    border: 15px solid red;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%);
+    margin-top: 10%;
+    cursor: pointer;
 }
 
 .game-area {
-    display: flex;
     justify-content: space-evenly;
-    background-image: url('images/bg-triangle.svg');
+    background-image: url('/images/bg-triangle.svg');
     background-repeat: no-repeat;
     background-position-x: center;
     height: 325px;
@@ -102,3 +100,19 @@ body {
     flex-wrap: wrap;
     position: relative;
 }
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.score-count {
+    text-align: center;
+    margin-top: -5%;
+    font-size: 48px;
+}
+
+
+

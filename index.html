@@ -18,31 +18,34 @@
   You Lose
 
   Play Again --->
-<link rel="stylesheet" type="text/css" href="styles.css">
-
+  <link rel="stylesheet" type="text/css" href="./src/css/styles.css">
+  <script type="text/javascript" src="./src/js/script.js"></script>
 </head>
 <body>
-  <div class="header-area">
-    <div class="title-score">
+  <div class="header-area flex">
+    <div class="title-score flex">
 
       <img alt="logo" src="images/logo.svg" class="logo">
 
       <div class="score">
         <h3 class="score-text">Score</h3>
+        <h3 class="score-count">0</h3>
       </div>
     </div>
   </div>
-  <div class="game-area">
-    <div class="paper-button">
-      <img alt="paper" src="images/icon-paper.svg" class="paper">
+  <div class="game-area flex">
+    <div class="paper-button flex">
+      <img alt="paper" src="images/icon-paper.svg" class="paper circle">
     </div>
-    <div class="scissors-button">
-      <img alt="scissors" src="images/icon-scissors.svg" class="scissors">
+    <div class="scissors-button flex" onclick="gameChoice('scissors');">
+      <img alt="scissors" src="images/icon-scissors.svg" class="scissors circle">
     </div>
-    <div class="rock-button"></div>
-      <img alt="rock" src="images/icon-rock.svg" class="rock">
+    <div class="rock-button flex">
+      <img alt="rock" src="images/icon-rock.svg" class="rock circle">
     </div>
   </div>
+
+  
 
   <!--
   <div class="attribution">
