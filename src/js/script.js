@@ -12,12 +12,9 @@ function gameChoice(choice) {
             console.log('Computer won!');
             if (score > 0) {
                 score--;
-            } else {
-                score = 0;
-            }
+            } 
                 console.log(score);
-            } else {
-                if (score >= 0) {
+            if (score >= 0) {
                     score++;
             }
             document.querySelector('.score-count').innerHTML = score;
@@ -32,14 +29,14 @@ function gameChoice(choice) {
         if (computerChoiceIndex === 2) {
             console.log('Computer won!');
             if (score > 0) {
-                score--;
+                score-=1;
             } else {
                 score = 0;
             }
                 console.log(score);
             } else {
                 if (score >= 0) {
-                    score++;
+                    score+=1;
             }
             document.querySelector('.score-count').innerHTML = score;
             console.log('You win!');
@@ -53,13 +50,13 @@ function gameChoice(choice) {
         if (computerChoiceIndex === 3) {
             console.log('Computer Won');
             if (score > 0) {
-                score--;
+                score-=1;
             } else {
                 score = 0;
             }
             console.log(score)
             if (score >= 0) {
-                    score++;
+                    score+=1;
             }
             document.querySelector('score-count').innerHTML = score;
             console.log('You win');
