@@ -54,9 +54,19 @@ body {
     margin-top: -4%;
     position: absolute;
     background-image: linear-gradient(to bottom,hsl(230, 89%, 62%) 0%,hsl(230, 89%, 35%) 100%);
-    align-content: center;
-    justify-content: center;
     cursor: pointer;
+}
+
+.paper:hover {
+    box-shadow: 0em 0em 0.5em black inset;
+}
+
+.paper-button:hover {
+    box-shadow: 0em 0em 0.5em black inset;
+}
+
+.paper-button:active {
+    background-image: linear-gradient(to bottom, hsl(198,62%,82%) 0%,hsl(194,78%,53%) 50%,hsl(197,60%,84%) 100%);
 }
 
 .scissors {
@@ -75,6 +85,18 @@ body {
     cursor: pointer;
 }
 
+.scissors:hover {
+    box-shadow: 0em 0em 0.5em black inset;
+}
+
+.scissors-button:hover {
+    box-shadow: 0em 0em 0.5em black inset;
+}
+
+.scissors-button:active {
+    background-image: linear-gradient(to bottom, hsl(37,65%,87%) 0%,hsl(37,42%,58%) 50%,hsl(37,42%,51%) 51%,hsl(37,55%,81%) 100%);
+}
+
 .rock {
     padding: 30px;
 }
@@ -88,6 +110,19 @@ body {
     background-image: linear-gradient(to bottom, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%);
     margin-top: 10%;
     cursor: pointer;
+}
+
+.rock:hover {
+    box-shadow: 0em 0em 0.5em black inset;
+}
+
+.rock-button:hover {
+    height: 110px;
+    width: 110px;
+}
+
+.rock-button:active {
+    background-image: linear-gradient(to bottom, hsl(17,73%,79%) 0%,hsl(17,80%,31%) 50%,hsl(17,98%,23%) 51%,hsl(17,47%,53%) 100%);
 }
 
 .game-area {

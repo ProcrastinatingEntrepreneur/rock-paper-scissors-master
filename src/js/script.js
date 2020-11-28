@@ -11,11 +11,11 @@ function gameChoice(choice) {
         if (computerChoiceIndex === 1) {
             console.log('Computer won!');
             if (score > 0) {
-                score--;
+                score-=1;
             } 
                 console.log(score);
             if (score >= 0) {
-                    score++;
+                    score+=1;
             }
             document.querySelector('.score-count').innerHTML = score;
             console.log('You win!');
@@ -64,6 +64,7 @@ function gameChoice(choice) {
             }
         }
     }
+
     /*
         if (choice === 'paper') {
             computerChoiceIndex = Math.floor(Math.random() * 3);
